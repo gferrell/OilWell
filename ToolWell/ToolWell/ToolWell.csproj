@@ -1,0 +1,26 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net7.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="oil-drill.png" />
+    <None Remove="oil-rig.png" />
+    <None Remove="service.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Moq" Version="4.18.4" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="oil-drill.png" />
+    <Resource Include="oil-rig.png" />
+    <Resource Include="service.png" />
+  </ItemGroup>
+
+</Project>
